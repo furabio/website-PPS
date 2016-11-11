@@ -1,0 +1,34 @@
+
+/*=============================================
+=            CONFIGURAÇÕES INICIAIS           =
+=============================================*/
+
+/*=============================================
+=                  Reset                      =
+=============================================*/
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+*, 
+*:after, 
+*:before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/*=====         End of Reset           ======*/
+
+
+.clearfix {
+  overflow: auto;
+}
+
+

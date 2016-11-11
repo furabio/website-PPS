@@ -1,0 +1,152 @@
+
+/*=============================================
+=                  PAGE STYLE                 =
+=============================================*/
+
+
+/*=============================
+=            HEADER           =
+==============================*/
+
+header {
+    width: 100%;
+    height: 33px;
+    background-color: #fff;
+    border-top: 3px solid #00a4ff;
+}
+header .header-logo {
+    float: left;
+    margin: 30px 0 20px;
+    display: none;
+}
+header nav.header-navegation {
+    float: right;
+    margin: 20px 0;
+}
+header ul.header-menu li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 0;
+}
+header ul.header-menu li a {
+    font-weight: regular;
+    color: #202427;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 2px 12px;
+}
+header ul.header-menu li a:hover {
+    color: #00a4ff;
+}
+header ul.header-menu, header ul.header-social {
+    display: inline-block;
+}
+header ul.header-social li {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 18px;
+}
+header ul.header-social li a {
+    font-size: 20px;
+    color: #00a4ff;
+}
+
+header .about {
+    background-image: url('../images/static6.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    margin: 0 auto;
+}
+header .about .my {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 62%;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    width: 190px;
+}
+header .about .my .my-photo {
+    background-image: url('../images/avatar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 178px;
+    margin-left: 6px;
+    margin-top: 6px;
+    position: absolute;
+    width: 178px;
+}
+header .about .content {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+header .about .content h1 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 60px;
+}
+header .about .content p {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+header .about .dev {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 28px;
+}
+header .about .dev a {
+    color: #FFF;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #00a4ff;
+    display: inline-block;
+    margin: 10px 0;
+}
+header .mouse-icon {
+    background: rgba(0,0,0,0);
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 50px;
+    margin: 10px auto;
+    width: 35px;
+    cursor: pointer;
+    -webkit-transition: all .6s linear;
+    -moz-transition: all .6s linear;
+    -ms-transition: all .6s linear;
+    -o-transition: all .6s linear;
+    transition: all .6s linear;
+}
+header .mouse-icon .wheel {
+    -webkit-animation: 3s ease 0s normal infinite moving-icon;
+    -moz-animation: 3s ease 0s normal infinite moving-icon;
+    -o-animation: 3s ease 0s normal infinite moving-icon;
+    animation: 3s ease 0s normal infinite moving-icon;
+    border-radius: 50%;
+    height: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    width: 8px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/*=====  End of HEADER  ======*/
+
+
+
+
+

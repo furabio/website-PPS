@@ -1,0 +1,17 @@
+{
+  "name": "flavio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flavio S. <flvdeveloper.gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-install": "^0.6.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-watch": "^4.3.10"
+  }
+}

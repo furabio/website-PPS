@@ -10,7 +10,6 @@
 
 header {
     width: 100%;
-    height: 33px;
     background-color: #fff;
     border-top: 3px solid #00a4ff;
 }
@@ -148,6 +147,39 @@ header .mouse-icon .wheel {
 }
 
 /*=====  End of HEADER  ======*/
+
+
+/*=============================================
+=                    MAIN                     =
+=============================================*/
+
+
+/*----------  Index  ----------*/
+
+section.about {
+    padding: 50px;
+    text-align: center;
+}
+section.about .title h2 {
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+section.about .title h2 span {
+    color: #00a4ff;
+}
+
+/*----------  End Index  ----------*/
+
+
+
+
+
+/*=====  End of MAIN  ======*/
+
+
+
+
 
 
 

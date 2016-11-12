@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "video.js": "^5.13.1"
   }
 }

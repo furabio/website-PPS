@@ -27,8 +27,12 @@
 /*=====         End of Reset           ======*/
 
 
-.clearfix {
-  overflow: auto;
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
 
 

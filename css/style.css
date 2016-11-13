@@ -116,10 +116,12 @@ header .about .dev a {
 header .about .dev a:hover {
     background-color: rgba(0, 164, 255, 1);
 }
+header p.pagination {
+    padding-bottom: 100px;
+}
 
 
 /*----------  MOUSE ANIMATION  ----------*/
-
 
 header .mouse-icon { 
     border: 2px solid white;
@@ -189,7 +191,6 @@ section.about .video-js.vjs-fluid {
 
 section.images {
     background-color: rgba(246, 246, 246, 1);
-
 }
 section.images .images-item img {
     width: 200px;
@@ -197,6 +198,17 @@ section.images .images-item img {
     display: block;
     margin: 15px auto; 
     height: auto; 
+}
+section.about .content {
+    margin-top: 60px;
+}
+section.about .content p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #202427;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-bottom: 40px;
 }
 
 

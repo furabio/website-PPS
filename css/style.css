@@ -3,7 +3,6 @@
 =                  PAGE STYLE                 =
 =============================================*/
 
-
 /*=============================
 =            HEADER           =
 ==============================*/
@@ -155,9 +154,11 @@ header .mouse-icon .wheel {
 
 
 /*----------  Index  ----------*/
-
-section.about {
+section {
     padding: 50px;
+    border-bottom: 1px solid #dedede;
+}
+section.about {
     text-align: center;
 }
 section.about .title h2 {
@@ -173,13 +174,68 @@ section.about .video-js.vjs-fluid {
     width: 85%;
 }
 
+section.images {
+    background-color: rgba(246, 246, 246, 1);
+
+}
+section.images .images-item img {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto; 
+    height: auto; 
+}
+
+
 /*----------  End Index  ----------*/
 
-
-
-
-
 /*=====  End of MAIN  ======*/
+
+
+/*=============================================
+=                     FOOTER                  =
+=============================================*/
+
+footer .footer-content {
+    padding: 50px;
+    text-align: center;
+    color: #8A9599;
+}
+footer .footer-content .footer-copyright {
+    margin-bottom: .3125rem; 
+}
+footer .footer-content .footer-links {
+    display: block;
+    margin-bottom: .9375rem;
+}
+footer .footer-content .footer-links ul li {
+    display: inline-block;  
+    border-right: 1px solid #8A9599;
+}
+footer .footer-content .footer-links ul li:last-child {
+    border-right: none;
+}
+footer .footer-content .footer-links ul li a {
+    font-weight: regular;
+    color: #202427;
+    font-size: 15px;
+    text-transform:  uppercase;
+    text-align: left;
+    letter-spacing: 0.4px;
+    padding: 2px 12px; 
+}
+footer .footer-content .footer-links ul li a::hover {
+    color: #00a4ff;
+}
+footer .footer-content .with-love p img {
+    width: 16px;
+    height: 16px;
+    color: red;
+}
+
+/*=====  End of FOOTER  ======*/
+
+
 
 
 

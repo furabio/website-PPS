@@ -6,13 +6,16 @@
     <title>Default title</title>
     <meta name="keywords" content="...">
     <meta name="description" content="...">
-    <link rel="icon" href="images/icon.png"><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,700i" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/video.js/dist/video-js.min.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- If you'd like to support IE8-->
+    <script src="bower_components/video.js/dist/ie8/videojs-ie8.min.js"></script>
   </head>
   <body>
     <header>
@@ -55,11 +58,12 @@
           <div class="title">
             <h2>Conheça o <span>Flávio</span></h2>
           </div>
-          <video width="600" height="480" controls>
-            <source src="movie.mp4" type="video/mp4">
+          <video class="video-js vjs-default-skin" id="my_video_1" width="640px" height="267px" controls preload="none" poster="http://video-js.zencoder.com/oceans-clip.jpg" data-setup="{ &quot;aspectRatio&quot;:&quot;640:267&quot;, &quot;playbackRates&quot;: [1, 1.5, 2] }">
+            <source src="videos/581886.mp4" type="video/mp4">
           </video>
         </div>
       </section>
     </main>
+    <script src="bower_components/video.js/dist/video.min.js"></script>
   </body>
 </html>

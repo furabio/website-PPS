@@ -168,6 +168,10 @@ section.about .title h2 {
 section.about .title h2 span {
     color: #00a4ff;
 }
+section.about .video-js.vjs-fluid {
+    margin: 25px auto;
+    width: 85%;
+}
 
 /*----------  End Index  ----------*/
 

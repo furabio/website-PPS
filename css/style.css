@@ -116,33 +116,39 @@ header .about .dev a {
 header .about .dev a:hover {
     background-color: rgba(0, 164, 255, 1);
 }
-header .mouse-icon {
-    background: rgba(0,0,0,0);
+header .mouse-icon { 
     border: 2px solid white;
     border-radius: 20px;
     height: 50px;
     margin: 10px auto;
     width: 35px;
     cursor: pointer;
-    -webkit-transition: all .6s linear;
-    -moz-transition: all .6s linear;
-    -ms-transition: all .6s linear;
-    -o-transition: all .6s linear;
-    transition: all .6s linear;
+    background-color: transparent;
+    position: relative;
 }
 header .mouse-icon .wheel {
-    -webkit-animation: 3s ease 0s normal infinite moving-icon;
-    -moz-animation: 3s ease 0s normal infinite moving-icon;
-    -o-animation: 3s ease 0s normal infinite moving-icon;
-    animation: 3s ease 0s normal infinite moving-icon;
     border-radius: 50%;
     height: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2px;
+    margin: 2px auto;
     width: 8px;
     background-color: transparent;
     border: 1px solid #fff;
+    animation-name: scroll;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    left: 13px;
+}
+
+@keyframes scroll {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
 }
 
 /*=====  End of HEADER  ======*/

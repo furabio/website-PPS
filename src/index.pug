@@ -1,0 +1,42 @@
+extends header.pug
+
+block title
+    title Flávio Silva - Início
+block before-description-page
+    .my
+        .my-photo
+    block description-page
+        .content
+            h1 Flávio Silva
+            p Love PHP, JS, HTML, CSS, Python, Ruby. I'm full stack web developer and fascinated by computer science.
+block after-description-page
+    .dev 
+        a(href="projetos.html" title="Projetos") 
+            i.fa.fa-book Veja meus últimos projetos
+    .mouse-icon
+        .wheel
+
+block content
+    main
+        section.about
+            .container
+                .title
+                    h2 Conheça o 
+                        span Flávio
+                video(id="my_video_1", class="video-js vjs-default-skin", width="640px", height="267px",
+      controls, preload="none", poster='http://video-js.zencoder.com/oceans-clip.jpg',
+      data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }')
+                    source(src="videos/581886.mp4", type="video/mp4")
+        section.images
+            .container
+                .row
+                    .col-md-6
+                        .images-item 
+                            img(src="images/fatec.png", alt="Fatec Logotipo")
+                    .col-md-6
+                        .images-item 
+                            img(src="images/ceeteps.png", alt="Centro Paula Souza Logotipo")
+
+            
+
+                

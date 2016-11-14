@@ -1,0 +1,46 @@
+extends header.pug
+
+block title
+    title Flávio Silva - Projetos
+
+block description-page 
+    h1 [ Projetos ]
+    p(class="pagination") Início >> Projetos
+
+block content
+    main
+        section.projects
+            .container
+                .title
+                    h2 Projetos
+                .row
+                    .col-md-5.offset-md-1
+                        article.project-item
+                            .title
+                                h3 Nodepro
+                            figure
+                                img(src="images/nodepro.png", alt="Nodepro Layout")
+                                figcaption Development of HTML, CSS and Javascript
+                            a.btn-project(href="https://furabio.github.io/nodepro/", title="Nodepro" target="_blank") View project
+
+                    .col-md-5.offset-md-1
+                        article.project-item
+                            .title
+                                h3 Nodeshop
+                            figure
+                                img(src="images/nodeshop.png", alt="Nodeshop Layout")
+                                figcaption Development of HTML, CSS and Javascript
+                         
+                            a.btn-project(href="https://furabio.github.io/nodeshop/", title="Nodeshop" target="_blank") View project
+
+                .row
+                    .col-md-5.offset-md-4
+                        article.project-item
+                            .title
+                                h3 Animeq
+                            figure
+                                img(src="images/desenvolvimento.jpg", alt="Animeq Layout")
+                                figcaption Development of HTML, CSS, Javascript, PHP, Laravel 5.3 
+                            a.btn-project(href="https://github.com/furabio/animeq", title="Animeq Project Github" target="_blank") View project 
+                    
+                    

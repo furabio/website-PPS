@@ -1,0 +1,30 @@
+extends header.pug
+
+block title
+    title Flávio Silva - Contato
+
+block description-page 
+    h1 [ Contato ]
+    p(class="pagination") Início >> Contato
+
+block content
+    main
+        section.contato
+            .container
+                .title
+                    h2 Contato
+                .form-group
+                    form(action="" method="")
+                        input(type="text" name="name" id="name" placeholder="Nome")
+                        input(type="email" name="email" id="email" placeholder="Email")
+                        input(type="number" name="telefone" id="telefone" placeholder="Telefone")
+                        input(type="text" name="cidade" id="cidade" placeholder="Cidade")
+                        select#assunto(name="assunto")
+                            option(value="0") Selecione um assunto
+                            option(value="1") Dúvidas
+                            option(value="2") Freelancer
+                            option(value="3") Orçamento
+                            option(value="4") Parceria
+                            option(value="5") Outros
+                        textarea(name="message", cols="30", rows="10" placeholder="Mensagem")
+                        input(class="submit" type="submit" name="Enviar" value="enviar")

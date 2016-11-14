@@ -14,8 +14,17 @@ header {
 }
 header .header-logo {
     float: left;
-    margin: 30px 0 20px;
-    display: none;
+    margin: 20px 0;
+}
+header .header-logo h2 {
+    font-weight: bold;
+    color: #202427;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+header .header-logo h2 span {
+    font-weight: 300;
+    color: #00a4ff;
 }
 header nav.header-navegation {
     float: right;
@@ -73,6 +82,7 @@ header .about .my {
 }
 header .about .my .my-photo {
     background-image: url('../images/avatar.jpg');
+    background-position: -2px -57px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
@@ -146,7 +156,7 @@ header .mouse-icon .wheel {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: absolute;
-    left: 13px;
+    left: 12px;
 }
 
 @keyframes scroll {

@@ -1,0 +1,46 @@
+extends layout.pug
+
+block header
+
+    header
+        .container
+            
+            .header-logo
+                h2 Flavio
+                    span Silva
+
+            
+            nav.header-navegation
+                ul.header-menu
+                    li 
+                        a(href="index.html", title="title") Início 
+                    li 
+                        a(href="sobre.html", title="title") Sobre 
+                    li 
+                        a(href="projetos.html", title="title") Projetos 
+                    li 
+                        a(href="contato.html", title="title") Contato 
+                ul.header-social 
+                    li
+                        a(href="https://www.facebook.com/young.programmist", title="Facebook" target="_blank") 
+                            i.fa.fa-facebook
+                    
+                    li
+                        a(href="https://github.com/furabio", title="Github" target="_blank") 
+                            i.fa.fa-github
+                     
+                    li
+                        a(href="https://twitter.com/furabio1", title="Twitter" target="_blank") 
+                            i.fa.fa-twitter
+             
+                    li
+                        a(href="#", title="Linkedin" target="_blank") 
+                            i.fa.fa-linkedin               
+        .about
+            .container
+                block before-description-page
+                    .content
+                        block description-page
+                            h1 Default Title
+                            p Default Content
+                block after-description-page

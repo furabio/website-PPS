@@ -176,7 +176,7 @@ section {
 section.about {
     text-align: center;
 }
-section.about .title h2 {
+section .title h2 {
     font-weight: 300;
     font-size: 50px;
     text-transform: uppercase;
@@ -210,7 +210,93 @@ section.about .content p {
     text-align: left;
     margin-bottom: 40px;
 }
+section.projects .title h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+article.project-item .title h3 {
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #373737;
+}
+article.project-item {
+    margin-bottom: 60px;
+}
+article img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+article.project-item figure img {
+    margin-bottom: 15px;
+}
+article.project-item figure figcaption {
+    font-size: 22px;
+    color: #373737;
+    margin-bottom: 15px;
+}
+.btn-project {
+    display: inline-block;
+    position: relative;
+}
+.btn-project {
+    width: 100%;
+    line-height: 2.4rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: .1rem;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    font-size: 1.6rem;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+.btn-project:hover {
+    border: 1px solid #fff;
+    color: #fff;
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    background-color: #00a4ff;
+}
 
+.form-group form input:not(.submit),
+.form-group form select,
+.form-group form textarea 
+{
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: none;
+    display: block;
+    border: 2px solid #E9E9E9;
+    border-radius: 5px;
+    color: #373737;
+    transition: border-color 0.15s ease-in-out 0s;
+    width: 100%;
+}
+.submit {
+    padding: 7px 20px;
+    background-color: #00a4ff;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100px;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    transition: .35s;
+}
+.submit:hover {
+    background-color: #fff;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    transition: .35s;
+}
 
 /*----------  End Index  ----------*/
 

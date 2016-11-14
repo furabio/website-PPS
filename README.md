@@ -14,7 +14,7 @@ Instalar as dependencies e devDependencies:
 ```sh
 $ cd website-PPS
 $ npm install -d
-$ bower update
+$ bower install
 ```
 
 Para ambientes de produção:

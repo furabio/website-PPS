@@ -30,13 +30,13 @@ header nav.header-navegation {
     float: right;
     margin: 20px 0;
 }
-header ul.header-menu li {
+header .header-menu li {
     cursor: pointer;
     display: inline-block;
     padding: 10px 0;
 }
-header ul.header-menu li a {
-    font-weight: regular;
+header .header-menu li a {
+    font-weight: regar;
     color: #202427;
     font-size: 15px;
     text-align: center;
@@ -44,18 +44,52 @@ header ul.header-menu li a {
     letter-spacing: 0.4px;
     padding: 2px 12px;
 }
-header ul.header-menu li a:hover {
+header .header-menu li a:hover {
     color: #00a4ff;
 }
-header ul.header-menu, header ul.header-social {
+
+/* DROPDOWN */
+
+header .header-menu li a i {
+    color: #00a4ff;
+    font-size: 20px;
+    margin-left: 6px;
+}
+header .header-menu ul {
+    display: none;
+    position: absolute;
+}
+header .header-menu li:hover ul {
+    display: block;
+}
+header .header-menu ul li {
+    display: block;
+    float: none;
+    background-color: #00a4ff;
+    border-bottom: .5px solid rgba(255, 255, 255, .5);
+}
+header .header-menu ul li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+header .header-menu ul li a {
+    color: #fff;
+}
+header .header-menu ul li a:hover {
+    color: #373737;
+}
+
+/* FIM DO DROPDOWN */
+
+header .header-menu, header .header-social {
     display: inline-block;
 }
-header ul.header-social li {
+header .header-social li {
     cursor: pointer;
     display: inline-block;
     margin-left: 18px;
 }
-header ul.header-social li a {
+header .header-social li a {
     font-size: 20px;
     color: #00a4ff;
 }

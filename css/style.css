@@ -15,6 +15,7 @@ header {
 header .header-logo {
     float: left;
     margin: 20px 0;
+    /*display: none;*/
 }
 header .header-logo h2 {
     font-weight: bold;
@@ -26,8 +27,87 @@ header .header-logo h2 span {
     font-weight: 300;
     color: #00a4ff;
 }
+
+
+/* MENU HAMBURGUER */
+
+.menu-hamburguer {
+    display: none;
+    margin-top: 25px;
+    width: 40px;
+    height: 36px;
+    position: relative;
+    padding: 1em;
+}
+.menu-hamburguer input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -14px;
+    z-index: 1;
+    opacity: 0;
+}
+.menu-hamburguer span {
+    width: 100%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    background-color: #00a4ff;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.menu-hamburguer span::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    background-color: #00a4ff;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.menu-hamburguer span::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: -10px;
+    background-color: #00a4ff;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.menu-hamburguer input:checked ~ span {
+    background: transparent;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.menu-hamburguer input:checked ~ span::before {
+    transform: translate(0px, -6px) rotate(-45deg);
+     -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.menu-hamburguer input:checked ~ span::after {
+    transform: translate(0, 15px) rotate(45deg);
+     -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+
+/* FIM DO MENU-HAMBURGUER */
+
+
+
+
+
+
 header nav.header-navegation {
-    float: right;
+    /*float: right;*/
     margin: 20px 0;
 }
 header .header-menu li {
@@ -389,6 +469,26 @@ footer .footer-content .with-love p img {
 }
 
 /*=====  End of FOOTER  ======*/
+
+
+/*=============================================
+=                 MEDIA QUERYS                =
+=============================================*/
+
+
+    /*header .header-navegation {
+        display: none;
+    }*/
+    .menu-hamburguer {
+        display: block;
+        float: right;
+        margin: 45px 0;
+    }
+    .menu-hamburguer input:checked > .header-logo {
+        /*float: none;*/
+        visibility: hidden;
+    }
+
 
 
 

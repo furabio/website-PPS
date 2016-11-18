@@ -476,6 +476,10 @@ footer .footer-content .with-love p img {
 =============================================*/
 
 @media screen and (max-width: 786px) {
+
+    
+    /* HEADER */
+    
     nav.header-navegation {
         display: none;
     }
@@ -525,6 +529,21 @@ footer .footer-content .with-love p img {
     ul.header-social {
         display: none;
     }
+    
+    /* ABOUT */
+
+    section.about .video-js.vjs-fluid {
+        width: 100%;
+        height: 300px;
+    }
+
+    
+    /* IMAGES */
+    
+    section.images .col-md-6:first-child .images-item {
+       margin-bottom: 50px;
+    }
+    
 }
 
 

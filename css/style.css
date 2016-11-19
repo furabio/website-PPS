@@ -333,7 +333,7 @@ section.about {
 }
 section .title h2 {
     font-weight: 300;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 section.about .title h2 span {
@@ -355,7 +355,7 @@ section.images .images-item img {
     height: auto; 
 }
 section.about .content {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 section.about .content p {
     /*font-size: 22px;
@@ -518,7 +518,7 @@ article.project-item figure figcaption {
     font-size: 25px;
     color: #00a4ff;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     margin-bottom: 2px;
     text-transform: uppercase;
@@ -540,7 +540,7 @@ article.project-item figure figcaption {
 .semestre table tbody tr td {
     color: #202427;
     padding: 5px;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -583,7 +583,7 @@ footer .footer-content .footer-links ul li a {
     letter-spacing: 0.4px;
     padding: 2px 12px; 
 }
-footer .footer-content .footer-links ul li a::hover {
+footer .footer-content .footer-links ul li a:hover {
     color: #00a4ff;
 }
 footer .footer-content .with-love p img {
@@ -615,13 +615,13 @@ footer .footer-content .with-love p img {
     .header-logo {
         display: block;
     }
-    header nav.header-navegation, header .header-menu li {
-        margin-right: -100%;
+    header nav.header-navegation {
+        display: none;
         transition: all .1s ease-in-out;
     }   
     .ativo {
-        margin-right: 0 !important; 
-        transition: all .3s ease-in-out;
+        display: block !important; 
+        transition: all .4s ease-in-out;
     }
     header .header-menu li a i {
         color: #fff;
@@ -672,6 +672,17 @@ footer .footer-content .with-love p img {
        margin-bottom: 50px;
     }
     
+}
+
+@media screen and (max-width: 480px) {
+    section.about .video-js.vjs-fluid {
+        height: 200px;
+    }
+
+    .img-fatec {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
 }
 
 

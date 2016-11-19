@@ -152,11 +152,14 @@ header .header-menu ul li:last-child{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+header .header-menu ul li:hover {
+    background-color: #fff;
+}
 header .header-menu ul li a {
     color: #fff;
 }
 header .header-menu ul li a:hover {
-    color: #373737;
+    color: #00a4ff;
 }
 
 /* FIM DO DROPDOWN */
@@ -273,6 +276,34 @@ header .mouse-icon .wheel {
     left: 12px;
 }
 
+
+/* Reponsive icons view in TABLET/SMARTPHONE */
+.header-social-responsive {
+    display: none;
+    margin: 25px 0;
+}
+.header-social-responsive li {
+    margin-right: 6px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.header-social-responsive li:hover {
+    padding-bottom: 10px;
+    transition: all .8s ease-in-out;
+}
+.header-social-responsive li a i {
+    margin-top: 6px;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
 @keyframes scroll {
   from {
     top: 0px;
@@ -327,12 +358,18 @@ section.about .content {
     margin-top: 60px;
 }
 section.about .content p {
-    font-size: 22px;
+    /*font-size: 22px;
     line-height: 1.5;
     color: #202427;
     letter-spacing: 0.25px;
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 40px;*/
+    font-size: 22px;
+    line-height: 1.5;
+    color: #373737;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-bottom: 15px;
 }
 section.projects .title h2 {
     text-align: center;
@@ -423,6 +460,46 @@ article.project-item figure figcaption {
 }
 
 /*----------  End Index  ----------*/
+
+
+/*----------  FATEC  ----------*/
+
+.fatec article .title {
+    margin-bottom: 40px;
+}
+.fatec article .title h2{
+    text-align: center;
+}
+.img-fatec {
+    width: 80%;
+    margin: 0 auto 40px;
+}
+.img-fatec img {
+    max-width: 100%;
+    height: auto;
+}
+.fatec article .title-content {
+    margin-bottom: 10px;
+}
+.fatec article .title-content h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000;
+}
+.fatec article .content {
+    margin-bottom: 20px;
+}
+.fatec article .content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #373737;
+    letter-spacing: 0.25px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
 
 /*=====  End of MAIN  ======*/
 
@@ -530,6 +607,9 @@ footer .footer-content .with-love p img {
     }
     ul.header-social {
         display: none;
+    }
+    .header-social-responsive {
+        display: block;
     }
     
     /* ABOUT */

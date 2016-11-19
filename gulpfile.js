@@ -4,7 +4,7 @@ var watch = require('gulp-watch');
 
 // task para pug  
 gulp.task('pug', function () {
-  gulp.src('src/*.pug')
+  gulp.src('src/**/*.pug')
   .pipe(pug({
       pretty: true,
       compileDebug: true,
@@ -15,7 +15,7 @@ gulp.task('pug', function () {
 
 // task para watch 
 gulp.task('watch', function(){
-    gulp.watch('src/*.pug', ['pug']);
+    gulp.watch('src/**/*.pug', ['pug']);
 });
 
 // task default gulp

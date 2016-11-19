@@ -480,9 +480,6 @@ footer .footer-content .with-love p img {
     
     /* HEADER */
     
-    nav.header-navegation {
-        display: none;
-    }
     header {
         display: block;
     }
@@ -494,8 +491,13 @@ footer .footer-content .with-love p img {
     .header-logo {
         display: block;
     }
-    header nav.header-navegation {
-       
+    header nav.header-navegation, header .header-menu li {
+        margin-right: -100%;
+        transition: all .1s ease-in-out;
+    }   
+    .ativo {
+        margin-right: 0 !important; 
+        transition: all .3s ease-in-out;
     }
     header .header-menu li a i {
         color: #fff;
@@ -537,7 +539,6 @@ footer .footer-content .with-love p img {
         height: 300px;
     }
 
-    
     /* IMAGES */
     
     section.images .col-md-6:first-child .images-item {
